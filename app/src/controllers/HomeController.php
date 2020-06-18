@@ -23,10 +23,31 @@ final class HomeController extends BaseController
         return $response;
     }
 
-      public function contact(Request $request, Response $response, $args)
+    public function contact(Request $request, Response $response, $args)
     {
 
         $this->view->render($response, 'contact.twig');
+        return $response;
+    }
+
+    public function exchange(Request $request, Response $response, $args)
+    {
+
+        $this->view->render($response, 'exchange.twig');
+        return $response;
+    }
+
+    public function services(Request $request, Response $response, $args)
+    {
+
+        $this->view->render($response, 'services.twig');
+        return $response;
+    }
+
+    public function news(Request $request, Response $response, $args)
+    {
+
+        $this->view->render($response, 'news.twig');
         return $response;
     }
 }

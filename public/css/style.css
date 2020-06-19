@@ -2365,3 +2365,24 @@ ul.bottom_menu li {
     background: #050000;
 }
 
+.infobox {
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #c3e5f8;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #dbedf9;
+    line-height: 22px;
+    clear: both;
+}
+.khung-new{
+    padding: 0 5%;
+    font-size: 18px;
+    color: black;
+}
+
+.full.services_blog:hover {
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+

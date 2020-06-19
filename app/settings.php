@@ -27,9 +27,9 @@ return [
                 'driver'   => 'pdo_mysql',
                 'host'     => '127.0.0.1',
                 'port'     => 8889,
-                'dbname'   => 'blog',
+                'dbname'   => 'test-slim',
                 'user'     => 'root',
-                'password' => 'root',
+                'password' => '',
             ]
         ],
 

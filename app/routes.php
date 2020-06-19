@@ -19,3 +19,17 @@ $app->get('/services', 'App\Controller\HomeController:services')
 
 $app->get('/news', 'App\Controller\HomeController:news')
 ->setName('news');
+
+$app->get('/dump-bitcoin-can-nhieu-tien', 'App\Controller\HomeController:news_detail')
+->setName('news-detail');
+
+
+$app->post('/testmail',function(Request $request, Response $response)
+{
+        $requestParamter = $request->getParsedBody();
+        $email =  $requestParamter['email'];
+        // $id = $requestParamter['name'];
+        sendVerificationEmail($email);
+        // $response->getBody()->write('Mail sent!');
+        // return $response;
+})->setName('testmail');

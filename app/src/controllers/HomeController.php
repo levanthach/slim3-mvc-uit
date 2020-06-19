@@ -50,4 +50,11 @@ final class HomeController extends BaseController
         $this->view->render($response, 'news.twig');
         return $response;
     }
+
+     public function news_detail(Request $request, Response $response, $args)
+    {
+
+        $this->view->render($response, 'news-detail.twig');
+        return $response;
+    }
 }

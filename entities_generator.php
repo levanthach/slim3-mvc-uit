@@ -13,10 +13,10 @@ $config->setProxyNamespace('Proxies');
 $connectionParams = array(
     'driver' => 'pdo_mysql',
     'host' => '127.0.0.1',
-    'port' => '8889',
-    'user' => 'root',
-    'password' => 'root',
-    'dbname' => 'blog',
+    'port' => '3306',
+    'user' => 'slim-user',
+    'password' => 'slim-user',
+    'dbname' => 'test-slim',
     'charset' => 'utf8',
 );
 $em = \Doctrine\ORM\EntityManager::create($connectionParams, $config);
